@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منصة الدورات التدريبية</title>
+  <style>
+    /* خطوط وتنسيقات عامة */
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f6fb;
+      color: #222;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    /* الهيدر */
+    .main-header {
+      background: linear-gradient(to left, #0044cc, #001f66);
+      color: white;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 0 0 20px 20px;
+    }
+
+    .main-header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .main-header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* عنوان القسم */
+    .category-title {
+      font-size: 26px;
+      margin: 50px 0 20px;
+      color: #0044cc;
+      display: inline-block;
+      border-bottom: 3px solid #0044cc;
+      padding-bottom: 5px;
+    }
+
+    /* البطاقات */
+    .courses-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .course-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      width: 280px;
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .course-card h3 {
+      color: #0044cc;
+      margin: 15px 15px 5px;
+      font-size: 20px;
+    }
+
+    .course-card p {
+      margin: 0 15px 15px;
+      color: #444;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      display: block;
+      background-color: #0044cc;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin: 0 15px 15px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #002f99;
+    }
+
+    /* استجابة للشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .courses-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <h1>منصة الدورات التدريبية</h1>
+      <p>ابدأ رحلتك في التعلم والتطوير الآن ✨</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2 class="category-title">📘 الدورات الإدارية</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="C:\Users\user\OneDrive\Pictures\Screenshots\leader.jpg " alt="دورة القيادة">
+        <h3>مهارات القيادة</h3>
+        <p>طور مهاراتك في اتخاذ القرار وقيادة الفرق باحتراف.</p>
+        <a href="#" class="btn-primary">اشترك الآن</a>
+      </div>
+      <div class="course-card">
+        <img src="C:\Users\user\OneDrive\Pictures\Screenshots\388f1fae0f4ee43c646e3d40c6682d44.jpg" alt="إدارة الوقت">
+        <h3>إدارة الوقت</h3>
+        <p>تعلم كيف تستثمر وقتك وتحقق نتائج أعلى.</p>
+        <a href="#" class="btn-primary">اشترك الآن</a>
+      </div>
+    </div>
+
+    <h2 class="category-title">🗣️ دورات اللغة الإنجليزية</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="C:\Users\user\OneDrive\Pictures\Screenshots\07ce20fb3ef58d82f216ddd8468cc7ae.jpg"alt="English Basics">
+        <h3>English Basics</h3>
+        <p>ابدأ من الصفر وتعلّم المحادثة والقواعد بسهولة.</p>
+        <a href="#" class="btn-primary">اشترك الآن</a>
+      </div>
+      <div class="course-card">
+        <img src="C:\Users\user\OneDrive\Pictures\Screenshots\03c4df1b3a83dcd10cbfab4a38122139.jpg" alt="TOEFL">
+        <h3>TOEFL Preparation</h3>
+        <p>استعد لاجتياز اختبار TOEFL بأعلى الدرجات.</p>
+        <a href="#" class="btn-primary">اشترك الآن</a>
+      </div>
+    </div>
+
+    <h2 class="category-title">🎓 الدبلومات</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src=C:\Users\user\OneDrive\Pictures\Screenshots\351ddbf872403fba31e926abc742cee9.jpg alt="جرافيك ديزاين">
+        <h3>دبلوم التصميم الجرافيكي</h3>
+        <p>احتراف الفوتوشوب والإليستريتور لتصميم شعارات وهوية بصرية.</p>
+        <a href="#" class="btn-primary">اشترك الآن</a>
+      </div>
+      <div class="course-card">
+        <img src="C:\Users\user\OneDrive\Pictures\Screenshots\24bf00c621fda424272bb0fb7ecb9b66.jpg" alt="دبلوم برمجة">
+        <h3>دبلوم البرمجة</h3>
+        <p>تعلم HTML, CSS, JS وPython لبناء مواقع وتطبيقات.</p>
+        <a href="#" class="btn-primary">اشترك الآن</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

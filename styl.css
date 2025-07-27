@@ -1,0 +1,213 @@
+
+ body {
+  font-family: 'Cairo', sans-serif;
+}
+
+.top-bar {
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.top-bar .logo {
+  color: white;
+  font-size: 24px;
+}
+
+.section-title {
+  color: #0044cc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn-custom {
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.feature-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #0044cc;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0px 0px 12px rgb(18, 18, 18);
+    
+}
+button{
+    color:white;
+}
+header button{
+    width: 140px;
+    padding: 10px;
+    margin-top: 16px;
+    background: rgb(219, 219, 230);
+    font-size: 17px;
+    box-shadow:0px 0px 8px whitesmoke ;
+    font-weight: bolder;
+    transition:1s ;
+}
+header button:hover{
+color: rgb(219, 219, 230);
+box-shadow:0px 0px 15px rgb(243, 247, 241) ;
+}
+header img{
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+
+.about-section {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+  color: #333;
+}
+
+.section-title {
+  color: #0044cc;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.nav-buttons a {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-buttons a:hover {
+  background-color: white;
+  color: black;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.main-header {
+  background: linear-gradient(to left, #0044cc, #001f66);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.main-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Section titles */
+.category-title {
+  font-size: 26px;
+  margin: 40px 0 20px;
+  color: #0044cc;
+  border-right: 6px solid #0044cc;
+  padding-right: 15px;
+}
+
+/* Course Cards */
+.courses-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 280px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.course-card h3 {
+  color: #0044cc;
+  margin: 15px 15px 5px;
+  font-size: 20px;
+}
+
+.course-card p {
+  margin: 0 15px 15px;
+  color: #444;
+  font-size: 15px;
+}
+
+.btn-primary {
+  display: block;
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 15px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #002f99;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .courses-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
